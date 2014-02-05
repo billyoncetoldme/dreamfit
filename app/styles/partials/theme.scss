@@ -1,0 +1,384 @@
+
+
+
+/*fonts import*/
+
+@import url("http://hello.myfonts.net/count/28f6b9");
+@font-face {font-family: 'AvenirLTStd-Book';
+src: url('../webfonts/28F6B9_0_0.eot');
+src: url('../webfonts/28F6B9_0_0.eot?#iefix') format('embedded-opentype'),
+url('../webfonts/28F6B9_0_0.woff') format('woff'),
+url('../webfonts/28F6B9_0_0.ttf') format('truetype');}
+@import url("http://cloud.webtype.com/css/2acd8d16-705d-4f16-9890-850147f22011.css");
+@font-face {
+ font-family: "Harriet Display Thin";
+ src: url("http://wac.6a25.edgecastcdn.net/006A25/webtype/ff/3/49604e74-a1bb-434d-b6e1-ab671a98b711") format("woff");
+ font-style: italic;
+ font-weight: normal;
+}
+
+
+/*color and font styling*/
+
+$red: #cc003d;
+$grey: #d2d3d5;
+$active-font-color: black;
+$primary-font-color: white;
+$font-stack: AvenirLTStd-Book;
+$secondary-font-style: Harriet Display Thin;
+
+.walmart-text, a, .compare-tab, .table-text, #komar-rights{
+	font-family: $font-stack
+}
+.walmart-text, a{
+	color: $primary-font-color;
+}
+.walmart-text{
+	font-size: 12px;
+	margin-right: -2px
+}
+a{
+	font-family: $font-stack;
+	text-decoration: none;
+	border: none;
+}
+img{
+	border: none
+}
+a:active, .active, .cycle-pager-active a{
+	color: $active-font-color
+}
+.compare-tab{
+	color: white;
+	font-size: 14px;
+}
+/*slideshow*/
+#slideshow{
+	position: relative;
+	float: left;
+	z-index: 1;
+	height: 643px
+}
+.slideshow-pager{
+	display: inline
+}
+.cycle-prev, .cycle-next{
+	position: absolute;
+	bottom: 308px;
+	z-index: 500
+}
+.cycle-next{
+	right: 5px
+}
+.cycle-prev{
+	left: 5px
+}
+/* feature dots on products*/
+#lifting-popup-1, #lifting-popup-2, #lifting-popup-3, #lifting-popup-4, 
+#wire-popup-1,#wire-popup-2,#wire-popup-3,#wire-popup-4,
+#lace-popup-1,#lace-popup-2,#lace-popup-3,
+#smoothing-popup-1,#smoothing-popup-2,#smoothing-popup-3,#smoothing-popup-4
+{
+	@extend .popup;	
+}
+#lifting-popup-1{
+	top: 445px;
+	left: 165px;
+}
+#lifting-popup-1 .box{
+	width: 159px;
+}
+#lifting-popup-2{
+	top: 270px;
+	left: 225px
+}
+#lifting-popup-2 .box{
+	width: 200px;
+}
+#lifting-popup-3{
+	top: 425px;
+	left: 359px;
+}
+#lifting-popup-3 .box{
+	width: 169px;
+}
+#lifting-popup-4{
+	top: 491px;
+	left: 439px;
+}
+#lifting-popup-4 .box{
+	width: 255px;
+}
+#lifting-product-feature4{
+	width: 246px;
+}
+#lifting-popup-3{
+	top: 425px;
+	left: 359px;
+}
+
+#wire-popup-1{
+	top: 449px;
+	left: 524px;
+}
+#wire-popup-1 .box{
+	width: 180px;
+}
+#wire-popup-2{
+	top: 343px;
+	left: 274px;
+}
+#wire-popup-2 .box{
+	width: 285px;
+}
+#product-feauture2 > p.product-feature-subcopy{
+	width: 278px
+}
+#wire-popup-3{
+	top: 239px;
+	left: 233px;
+}
+#wire-popup-3 .box{
+	width: 138px;
+}
+#wire-popup-4{
+	top: 465px;
+	left: 324px;
+}
+#wire-popup-4 .box{
+	width: 198px;
+}
+#lace-popup-1{
+	top: 449px;
+	left: 324px;
+	z-index: 200
+}
+#lace-popup-1 .box{
+	width: 185px;
+}
+#lace-popup-2{
+	top: 303px;
+	left: 253px;
+}
+#lace-popup-2 .box{
+	width: 285px;
+}
+#product-feauture2 > p.product-feature-subcopy{
+	width: 278px
+}
+#lace-popup-3{
+	top: 479px;
+	left: 434px;
+	z-index: 100
+}
+#lace-popup-3 .box{
+	width: 252px;
+}
+#smoothing-popup-1{
+	top: 243px;
+	left: 219px;
+}
+#smoothing-popup-1 .box{
+	width: 220px;
+}
+#smoothing-popup-2{
+	top: 463px;
+	left: 195px;
+}
+#smoothing-popup-2 .box{
+	width: 304px;
+}
+#product-feauture2 > p.product-feature-subcopy{
+	width: 296px
+}
+#smoothing-popup-3{
+	top: 338px;
+	left: 373px;
+}
+#smoothing-popup-3 .box{
+	width: 250px;
+}
+#smoothing-popup-4{
+	top: 430px;
+	left: 464px;
+}
+#smoothing-popup-4 .box{
+	width: 242px;
+}
+/*comparison*/
+
+.compare-tabs li{
+	display: inline;
+	list-style-type: none;
+}
+.compare-tab{
+	background-color: $red;
+	width: 185px;
+	height: 38px;
+	display: inline-block;
+	float: right;
+	margin: 10px 0px 0px 4px;
+	border-radius: 15px  15px 0 0px;
+	text-align: center;
+	line-height:14px;
+	text-transform: uppercase	
+} 
+.compare-tab  h5{
+		margin: 8px 0;
+}
+#comparison-table{
+	width: 1087px;
+	border: 2px solid $red;
+	margin-top: 47px;
+	#comparison-images img{
+		float: right;
+		margin-left: 5px
+	}
+}
+#first-tab-image{
+	margin-right: 2px
+}
+.table-row{
+	clear: both;
+	display: block;
+	position: relative;
+}
+.table-row-grey{
+	background-color: black;
+	background-color: $grey
+}
+.table-text{
+	line-height: 1em;
+	vertical-align: middle;
+	width: 246px;
+	padding: 5px 0 5px 50px;
+
+}
+.table-dot{
+	background-color: $red;
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	display: inline-block
+}
+.back-smoothing-dot{
+	left: 417px;
+}
+#row-one, #row-two, #row-three, #row-six, #row-eight, #row-nine{
+	.table-dot{
+		top: 15px;
+	}
+}
+#row-four, #row-five, #row-seven{
+	.table-dot{
+		top: 8px
+	}
+}
+
+.laced-dot{
+	left: 620px
+}
+.lifting-dot{
+	left: 800px
+}
+.wire-dot{
+	left: 990px
+}
+/*fit guide */
+.fit-container{
+	width: 1090px
+}
+.tabs{
+	margin:50px -37px 9px;
+	width: 1087px;
+	text-transform: uppercase;
+	font-size: 14px;
+	li{	
+		display: inline;
+	}
+	a{	
+		background-color:$red;
+		border-top: 2px solid $red;
+		border-right: 2px solid $red;
+		border-left: 2px solid $red;
+		border-radius: 15px  15px 0 0px;
+		color: white;
+		padding: 11px 50px;
+		/*(margin-bottom: -1px	*/
+	}
+}
+#tab1 > img{
+	width: 1085px;
+}
+.active-tab{
+	background-color: white !important;
+	color: black !important;
+}
+#first-tab, #middle-tab, #last-tab{
+	border-radius: 15px  15px 0 0px;
+}
+#first-tab{
+	float: left;
+	margin-left: -2px
+}
+#first-tab span{
+	padding: 0 25px
+}
+#spacer-tab{
+	margin: 0 127px 0 171px;
+}
+#spacer-tab span{
+	padding: 0 25px	
+}
+#last-tab{
+	float: right;
+}
+#tab1, #tab2, #tab3{
+	border: 2px solid $red;
+	margin-top: 4px;
+	margin-left: 1px
+}
+                                      /*--wiki */
+#wiki-lead{
+	font-size: 30px;
+	color: $red; 
+	font-family:$secondary-font-style;
+	font-style: italic;
+	padding: 20px 15px 15px
+}
+#sub-lead{
+	font-family: $font-stack;
+	font-size: 15px;
+	padding: 5px 15px 10px;
+	letter-spacing: 1px;
+	line-height: 20px;
+}
+#wiki-body{
+	border-top: 1px solid $red;
+	width: 1065px;
+	height: 100%;
+	margin: 10px auto
+}
+.wiki-article{
+	padding: 10px 0;
+}
+.wiki-body-lead-copy{
+	color: $red;
+	font: 15px $font-stack
+}
+.wiki-body-sub-copy{
+	font: 14px $font-stack;
+	letter-spacing: 1px
+}								/*--test*/
+.q-and-a{
+	padding: 33px 25px 0;
+}
+.question{
+	padding-bottom: 10px;
+	font: 14px $font-stack;
+}
+.answer{
+	font: 14px $font-stack;
+	color: $red;
+}

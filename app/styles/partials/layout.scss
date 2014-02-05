@@ -1,0 +1,71 @@
+body{
+	margin: 0
+}
+.container{
+	width: 1091px;
+	margin: 0 auto; 
+}
+header{
+	height: 108px;
+	background-color: black;
+	position: relative;
+	nav{
+		height: 23px;
+		width: 100%;
+		background-color: $red;
+		position: relative;
+		li{
+		display: inline;
+		padding: 0 15px;
+		margin-top: 5px;
+		vertical-align: middle;
+		font-size: 14px		
+		}
+	}
+}
+.headerlogo{
+	width: 329px;
+	position: relative;
+	left: 387px;
+	top: 8px;
+}
+.walmart-text{
+	position: relative;
+	left: 605px;
+	bottom: -6px;
+	display: inline;
+	img{
+		position: relative;
+		top: 6px;
+		padding-left: 2px;
+	}
+}
+footer{	
+	clear: both;
+	padding-top: 10px;
+	text-transform: uppercase
+}
+#komar-rights{
+	float: right
+}
+#komar-logo{
+	float: left;
+	display: inline;
+}
+
+/*sidenav*/
+#last-side-nav{
+	margin-top: 1px
+}
+#side-nav{
+	float: right;
+	li{
+		margin-bottom: -6px;
+		list-style-type: none
+	}
+}
+/*fitguide*/
+#fit-article{
+	height: 649px
+}
+
