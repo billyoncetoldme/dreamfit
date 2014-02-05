@@ -27,6 +27,72 @@ $primary-font-color: white;
 $font-stack: AvenirLTStd-Book;
 $secondary-font-style: Harriet Display Thin;
 
+
+
+
+.popup{
+	position: absolute;
+		.hovertext{
+			text-decoration: none
+			}
+		.circle{
+			border-radius: 999px;
+			height: 15px;
+			width: 15px;
+			background-color: $red;
+			position: relative;
+			left: 50%;
+			top: 100px;
+			behavior: url(../pie/PIE.htc)
+		}
+		.box{
+			height: 30px;
+			border-radius: 2px;
+			opacity: .2;
+			background-color: white;
+			opacity: .5;
+			position: relative;
+			left:25px;
+			bottom: 25px;
+			display: none;
+			behavior: url(../pie/pie.htc)
+			
+		}
+		.product-feature{
+			background-color: transparent;
+			width: 246px
+		}
+		.product-feature-header{
+			display: none;
+			position: relative;
+			left: 29px;
+			bottom: 69px;
+			text-transform: uppercase;
+			color: $red; 
+			
+		}
+		.product-feature-subcopy{
+			color: black;
+			font-size: 11px;
+			position: relative;
+			top: -89px;
+			left: 29px;
+			display: none;
+			
+		}
+
+		a:hover  .box, a:hover .product-feature-header, a:hover .product-feature-subcopy{
+			display: block;
+		}
+		.plus{
+			color: white;
+			text-decoration: none;
+			position: relative;
+			left: 2px;
+			bottom: 3px
+		}
+	}
+
 .walmart-text, a, .compare-tab, .table-text, #komar-rights{
 	font-family: $font-stack
 }
@@ -86,7 +152,7 @@ a:active, .active, .cycle-pager-active a{
 	left: 165px;
 }
 #lifting-popup-1 .box{
-	width: 159px;
+	width: 165px;
 }
 #lifting-popup-2{
 	top: 270px;
